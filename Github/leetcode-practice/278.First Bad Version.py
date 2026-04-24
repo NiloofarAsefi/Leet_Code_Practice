@@ -17,7 +17,7 @@ class Solution:
             else:
                 left= mid +1
         return answer
-
+# "false" is string and boolean is different from string.
 
 
         
