@@ -22,19 +22,16 @@ class Solution:
                 # if path_value_so_far == targetSum:
                 #     return True
                 # else:
-                #     False
-            
+                #     False   
             path_value_so_far += root.val
             left_output = dfs(root.left, path_value_so_far) # node 4 returns True
             # for node 7 left_output = False
             right_output = dfs(root.right, path_value_so_far) # node 8 returns False
             # for node 2 right_output = True
-
             # for node 11, left_output = False and right_output = True
             return left_output or right_output
         return dfs(root, 0)     
 
-            
 
 
         
